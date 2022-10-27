@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.21",
+    "@types/react-router-dom": "^5.3.3",
     "@types/webpack": "^5.28.0",
     "@types/webpack-dev-server": "^4.7.2",
     "css-loader": "^6.6.0",
@@ -32,6 +33,7 @@
     "@types/react": "^18.0.23",
     "@types/react-dom": "^18.0.7",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.2.1"
   }
 }
