@@ -6,6 +6,7 @@ import { AboutPage } from "pages/AboutPage";
 import { MainPage } from "pages/MainPage";
 import "./styles/index.scss";
 import { AppRouter } from "./providers/router";
+import { Navbar } from "widgets/Navbar";
 
 export const App = () => {
   const { theme, toggleTheme } = useTheme();
@@ -18,13 +19,9 @@ export const App = () => {
         [theme]
       )}
     >
+      <Navbar/>
+      <AppRouter />
       <button onClick={toggleTheme}>TOGGLE</button>
-      <div>
-        <Link to="/">Главная</Link>
-        <span>________</span>
-        <Link to="/about">О нас</Link>
-      </div>
-        <AppRouter/>
     </div>
   );
 };
