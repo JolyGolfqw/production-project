@@ -20,11 +20,13 @@ export const App = () => {
         [theme]
       )}
     >
-      <Navbar />
-      <div className="page-content">
-        <Sidebar />
-        <AppRouter />
-      </div>
+      <Suspense fallback="">
+        <Navbar />
+        <div className="page-content">
+          <Sidebar />
+          <AppRouter />
+        </div>
+      </Suspense>
     </div>
   );
 };
