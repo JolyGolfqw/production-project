@@ -1,7 +1,6 @@
 import { classNames } from "shared/lib/classNames";
 import styles from "./Sidebar.module.scss";
-
-import { PropsWithChildren, useState } from "react";
+import { PropsWithChildren, useState } from 'react';
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";
 import { LangSwitcher } from "widgets/LangSwitcher/LangSwitcher";
 
@@ -21,7 +20,7 @@ export const Sidebar = (props: PropsWithChildren<SidebarProps>) => {
   return (
     <div
       className={classNames(styles.Sidebar, { [styles.collapsed]: collapsed }, [
-        className,
+        className
       ])}
     >
       <button onClick={onToggle}>toggle</button>

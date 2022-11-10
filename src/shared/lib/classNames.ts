@@ -1,6 +1,6 @@
 type Mode = Record<string, boolean | string>;
 
-export function classNames(
+export function classNames (
   cls: string,
   mode: Mode = {},
   additional: string[] = []
