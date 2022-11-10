@@ -3,14 +3,14 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "standard-with-typescript"],
+  extends: ["plugin:react/recommended", "standard-with-typescript", "plugin:i18next/recommended"],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
     project: ["./tsconfig.json"],
   },
-  plugins: ["react"],
+  plugins: ["react", "i18next"],
   rules: {
     quotes: "off",
     "react/react-in-jsx-scope": "off",
@@ -42,7 +42,10 @@ module.exports = {
     "no-underscore-dangle": "off",
     "@typescript-eslint/no-floating-promises": "off",
     "space-before-blocks": "off",
-    "@typescript-eslint/space-before-blocks": "off"
+    "@typescript-eslint/space-before-blocks": "off",
+    "space-before-function-paren": "off",
+    "@typescript-eslint/space-before-function-paren": "off",
+    "i18next/no-literal-string": ["error", { markupOnly: true }]
   },
 
   globals: {
