@@ -1,4 +1,4 @@
-import { classNames } from "shared/lib/classNames";
+import { classNames } from "shared/lib/classNames/classNames";
 import styles from "./Sidebar.module.scss";
 import { PropsWithChildren, useState } from 'react';
 import { ThemeSwitcher } from "widgets/ThemeSwitcher";
