@@ -36,7 +36,7 @@
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS",
-      "strictNullChecks": true
+      "strictNullChecks": true,
     }
   }
 }
