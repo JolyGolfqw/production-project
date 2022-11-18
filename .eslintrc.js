@@ -3,8 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:react/recommended", "standard-with-typescript", "plugin:i18next/recommended"],
-  overrides: [],
+  extends: [
+    "plugin:react/recommended",
+    "standard-with-typescript",
+    "plugin:i18next/recommended",
+  ],
   parserOptions: {
     ecmaVersion: "latest",
     sourceType: "module",
@@ -45,10 +48,22 @@ module.exports = {
     "@typescript-eslint/space-before-blocks": "off",
     "space-before-function-paren": "off",
     "@typescript-eslint/space-before-function-paren": "off",
-    "i18next/no-literal-string": ["error", { markupOnly: true }]
+    "i18next/no-literal-string": [
+      "error",
+      { markupOnly: true, ignoreAttribute: ["data-testid"] },
+    ],
   },
 
   globals: {
     __IS_DEV__: true,
   },
+
+  overrides: [
+    {
+      files: ["**/src/**/*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": "off"
+      }
+    },
+  ],
 };
