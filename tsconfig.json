@@ -36,10 +36,9 @@
   "ts-node": {
     "compilerOptions": {
       "module": "CommonJS",
-      "strictNullChecks": true,
+      "strictNullChecks": true
     }
   },
-  // "include": [
-  //   "./config/jest/setupTests.ts"
-  // ],
+  "include": ["./config/jest/setupTests.ts", "./src/**/*.ts", "./src/**/*.tsx"],
+  
 }
