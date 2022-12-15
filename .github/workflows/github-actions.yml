@@ -2,8 +2,11 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 jobs:
-  Explore-GitHub-Actions:
+    pipeline:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [ 17.x ]
     steps:
       - uses: actions/checkout@v2
       - name: Staring Node.js ${{ matrix.node-version }}
